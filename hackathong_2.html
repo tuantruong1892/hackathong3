@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body onload="rennderStuden()">
+    <h2 id="welcomeMessage">Thông tin học viên</h2>
+    <div class="modal">
+    <!-- <form id="contactForm"> -->
+      <div class="field">
+        <label for="name">tên</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="field">
+        <label for="tel">số điện thoại</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div class="field">
+        <label for="text">Quê quán </label>
+        <input type="text" name="address" id="address" />
+      </div>
+      <div>
+        <label for="check">giới tính</label>
+        <input type="radio" name="gender" id="gender">nam</input><input type="radio" name="gender" id="gender">nữ</input>
+      </div>
+      <div class="field">
+       <button onclick="handleClickbtn()" type="submit">Lưu lại</button>
+      </div>
+    <!-- </form> -->
+
+    <p> danh sách học viên</p>
+    <table id="tablecontent" border="1">
+        <!-- <tr>
+            <th>#</th>
+            <th>họ và tên</th>
+            <th>email</th>
+            <th>address</th>
+            <th>số điện thoại</th>
+            <th>giới tính</th>
+            <th>action</th>
+            <th></th>
+     
+        </tr> -->
+    </table>
+    Tìm kiếm học viên<input
+    type="text"
+    placeholder="search "
+    oninput="handleSearch(this.value)"
+  />
+</div>
+  </body>
+  <script src="./hackathong_2.js"></script>
+</html>
